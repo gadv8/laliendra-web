@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+@font-face {
+    font-family: 'Myriad';
+    src: url('../font/AcuminVariableConcept.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.foot-movil{
+    display: none;
+}
+
+footer{
+    padding: 10px;
+}
+
+footer h2{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Header*/
+header{
+    width: 100%;
+    height: 600px;
+    background: #ffffff00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ff7bac, #ffffff00), url(../img/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ff7bac, #ffffff00), url(../img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+header .texts-header{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texts-header h1{
+    -webkit-text-stroke: 2px black;
+    font-size: 80px;
+    color: #fff;
+}
+
+.texts-header h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+}
+
+/* ABOUT US */
+.container-about-us{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.img-lali2-movil{
+    display: none;
+}
+
+.img-family-movil{
+    display: none;
+}
+
+.image-about-us{
+    width: 48%;
+}
+
+.about-us .container-texts{
+    padding: 30px;
+    width: 48%;
+}
+
+.container-texts h3{
+    font-size: 40px;
+    margin-bottom: 15px;
+    -webkit-text-stroke: 2px #3fa9f5;
+    color: transparent;
+}
+
+.container-texts .color-pink{
+    -webkit-text-stroke: 2px #ff7bac;
+}
+
+.container-texts p{
+    text-align: justify;
+}
+
+.display-medium{
+    display: none;
+}
+
+/* DATA RS*/
+.data-rs{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 200px 40px 160px 40px;
+    align-items: center;
+    background: url(../img/fondo1.svg);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.cont-data-rs{
+    text-align: center;
+    width: 48%;
+}
+
+.cont-data-rs h3{
+    font-size: 60px;
+}
+
+.cont-data-rs h4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+hr {
+    height: 4px;
+    width: 400px;
+    margin: auto;
+    background-color: black;
+}
+
+.cont-images-rs{
+    width: 48%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image-in{
+    width: 24%;
+    text-align: center;
+}
+
+.image-in img{
+    width: 60%;
+}
+
+
+.cont-data-rs a{
+    background-color: #3fa9f5;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #000;
+}
+
+/******  RESPONSIVE  ******/
+@media screen and (max-width:1000px){
+    
+    .container{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    header{
+        background-position: center;
+    }
+
+    .texts-header h1{
+        font-size: 70px;
+    }
+    
+    /* ABOUT US */
+    .vector-blue{
+        display: none;
+    }
+    .container-about-us{
+       flex-direction: column; 
+       justify-content: center;
+    }
+
+    .about-us .container-texts{
+        width: 95%;
+    }
+
+    .image-about-us{
+        width: 100%;
+    }
+    
+    .display-medium{
+        display: block;
+    }
+
+    .display-big{
+        display: none;
+    }
+    
+    /* DATA RS*/
+    .data-rs{
+        flex-direction: column;
+        padding: 130px 30px 100px 30px;
+    }
+    .cont-data-rs{
+        width: 80%;
+    }
+    .cont-images-rs{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .image-in img{
+        width: 70%;
+    }
+    
+    .cont-data-rs h3{
+        font-size: 50px;
+    }
+
+    .cont-data-rs h4{
+        font-size: 18px;
+    }
+
+    hr {
+        height: 3px;
+        width: 340px;
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    
+    .foot-movil{
+        display: block;
+    }
+    .foot-pc{
+        display: none;
+    }
+    .texts-header h1{
+        font-size: 35px;
+    }
+
+    .texts-header h2{
+        font-size: 15px;
+    }
+    
+    /* ABOUT US */
+
+    .img-lali2-movil{
+        display: block;
+    }
+
+    .img-lali2-pc{
+        display: none;
+    }
+    .img-family-movil{
+        display: block;
+    }
+
+    .img-family-pc{
+        display: none;
+    }
+    
+    .bg-blue{
+        background-color: #3fa9f5;
+    }
+    .bg-pink{
+        background-color: #ff7bac;
+    }
+
+    .container-about-us{
+        margin-bottom: 0px;
+     }
+    .about-us .container-texts{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container-texts h3{
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        -webkit-text-stroke: 0px;
+    }
+
+    .container-texts p{
+        color: #fff;
+        text-align: center;
+    }
+    .container-texts .color-pink {
+        -webkit-text-stroke: 0px;
+    }
+
+    /* DATA RS*/
+    .data-rs{
+        padding: 120px 20px 50px 20px;
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-y: bottom;
+    }
+
+    .cont-images-rs{
+        margin-top: 30px;
+    }
+    
+    .image-in img{
+        width: 90%;
+    }
+    
+    .cont-data-rs h3{
+        font-size: 40px;
+    }
+
+    .cont-data-rs h4{
+        font-size: 16px;
+    }
+
+    hr {
+        height: 3px;
+        width: 260px;
+    }
+    
+    
+}

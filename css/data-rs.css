@@ -1,0 +1,125 @@
+.data-rs{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 200px 40px 160px 40px;
+    align-items: center;
+    background: url(../img/fondo1.svg);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.cont-data-rs{
+    text-align: center;
+    width: 48%;
+}
+
+.cont-data-rs h3{
+    font-size: 60px;
+}
+
+.cont-data-rs h4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+hr {
+    height: 4px;
+    width: 400px;
+    margin: auto;
+    background-color: black;
+}
+
+.cont-images-rs{
+    width: 48%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image-in{
+    width: 24%;
+    text-align: center;
+}
+
+.image-in img{
+    width: 60%;
+}
+
+.cont-data-rs a{
+    background-color: #3fa9f5;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #000;
+}
+
+/******  RESPONSIVE  ******/
+@media screen and (max-width:1000px){
+    .data-rs{
+        flex-direction: column;
+        padding: 130px 30px 100px 30px;
+    }
+    .cont-data-rs{
+        width: 80%;
+    }
+    .cont-images-rs{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .image-in img{
+        width: 70%;
+    }
+    
+    .cont-data-rs h3{
+        font-size: 50px;
+    }
+
+    .cont-data-rs h4{
+        font-size: 18px;
+    }
+
+    hr {
+        height: 3px;
+        width: 340px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .data-rs{
+        padding: 120px 20px 50px 20px;
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-y: bottom;
+    }
+
+    .cont-images-rs{
+        margin-top: 30px;
+    }
+    
+    .image-in img{
+        width: 90%;
+    }
+    
+    .cont-data-rs h3{
+        font-size: 40px;
+    }
+
+    .cont-data-rs h4{
+        font-size: 16px;
+    }
+
+    hr {
+        height: 3px;
+        width: 260px;
+    }
+}

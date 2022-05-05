@@ -23,7 +23,7 @@
 }
 
 .container-texts h3{
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 15px;
     -webkit-text-stroke: 2px #3fa9f5;
     color: transparent;
@@ -34,6 +34,7 @@
 }
 
 .container-texts p{
+    font-size: medium;
     text-align: justify;
 }
 

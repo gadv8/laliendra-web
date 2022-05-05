@@ -15,20 +15,20 @@
 }
 
 .cont-data-rs h3{
-    font-size: 60px;
+    font-size: 110px;
     letter-spacing: 1px;
 }
 
 .cont-data-rs h4{
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 26px;
+    font-size: 36px;
     letter-spacing: 1px;
 }
 
 hr {
     height: 4px;
-    width: 400px;
+    width: 490px;
     margin: auto;
     background-color: black;
 }
@@ -46,7 +46,7 @@ hr {
 }
 
 .image-in img{
-    width: 60%;
+    width: 80%;
 }
 
 .cont-data-rs a{
@@ -56,7 +56,7 @@ hr {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 40px;
     margin: 20px 2px;
     cursor: pointer;
     border-radius: 12px;
@@ -64,7 +64,24 @@ hr {
 }
 
 /******  RESPONSIVE  ******/
-@media screen and (max-width:1000px){
+@media screen and (max-width:1800px){
+    .cont-data-rs h3{
+        font-size: 60px;
+    }
+
+    .cont-data-rs h4{
+        font-size: 20px;
+    }
+
+    hr {
+        height: 3px;
+        width: 340px;
+    }
+    .cont-data-rs a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1200px){
     .data-rs{
         flex-direction: column;
         padding: 130px 30px 100px 30px;
@@ -80,18 +97,6 @@ hr {
         width: 70%;
     }
     
-    .cont-data-rs h3{
-        font-size: 60px;
-    }
-
-    .cont-data-rs h4{
-        font-size: 20px;
-    }
-
-    hr {
-        height: 3px;
-        width: 340px;
-    }
 }
 
 @media screen and (max-width:500px){
@@ -123,4 +128,5 @@ hr {
         height: 3px;
         width: 230px;
     }
+    
 }

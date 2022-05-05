@@ -44,19 +44,20 @@ p{
 
 header{
     width: 100%;
-    height: 600px;
+    height: 1000px;
     background: #ffffff00;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #ff7bac, #ffffff00), url(../img/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #ff7bac, #ffffff00), url(../img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     /* background-attachment: fixed; */
     position: relative;
+    background-position: center;
 }
 
 header .texts-header{
     display: flex;
     width: 100%;
-    height: 800px;
+    height: 1200px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -108,15 +109,15 @@ header .texts-header{
 }
 
 /******  RESPONSIVE  ******/
-@media screen and (max-width:1000px){
-    .container{
-        width: 100%;
-        padding-bottom: 0;
-    }
-    header{
-        background-position: center;
-    }
 
+@media screen and (max-width:1800px){
+    header{
+        height: 600px;
+    }
+    header .texts-header{
+        height: 800px;
+    }
+    
     .texts-header h1{
         font-size: 100px;
     }
@@ -125,6 +126,13 @@ header .texts-header{
         font-size: 30px;
         margin-top: -24px;
     }
+}
+@media screen and (max-width:1000px){
+    .container{
+        width: 100%;
+        padding-bottom: 0;
+    }
+
 }
 
 @media screen and (max-width:500px){

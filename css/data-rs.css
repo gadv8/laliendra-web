@@ -43,13 +43,14 @@ hr {
 .image-in{
     width: 24%;
     text-align: center;
+    z-index: 1;
 }
 
 .image-in img{
     width: 80%;
 }
 
-.cont-data-rs a{
+.btn-in{
     background-color: #3fa9f5;
     color: white;
     padding: 8px 32px;
@@ -77,7 +78,7 @@ hr {
         height: 3px;
         width: 340px;
     }
-    .cont-data-rs a{
+    .btn-in{
         font-size: 20px;
     }
 }
